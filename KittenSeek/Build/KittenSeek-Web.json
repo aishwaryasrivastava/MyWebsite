@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "KittenSeek-Web.data.unityweb",
+"asmCodeUrl": "KittenSeek-Web.asm.code.unityweb",
+"asmMemoryUrl": "KittenSeek-Web.asm.memory.unityweb",
+"asmFrameworkUrl": "KittenSeek-Web.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
