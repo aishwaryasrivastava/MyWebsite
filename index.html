@@ -4,53 +4,105 @@
   <head>
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> 
-    <link rel="stylesheet" href="main.css">   
+    <link rel="stylesheet" href="main.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
   </head>
 
   <body>
-    <div class="nav">
-      <div class="container">
-        <ul class="pull-left">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutme.html">About Me</a></li>
-        </ul>
-        <ul class="pull-right">
-          <li><a href="links.html">Quick Links</a></li>
-          <li><a href="Contact.html">Contact me</a></li>
+    
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Aishwarya Srivastava</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#work">Work Experience</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Links<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://docs.wixstatic.com/ugd/cef64c_79b116790d094ed189f86df4ea46a1a2.pdf">Resume</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
+  </div>
+</nav>    
 
-    <div class="jumbotron">
+
+    <div id = "home" class="intro section">
       <div class="container"><center>
-
-        <h1>Hi, I'm Aishwarya.</h1>
-        <p>The Ohio State University, class of 2018.</p>
-        <a href="#">Learn More</a></center>
+        <h1>Hello there! I'm Aishwarya Srivastava.</h1>
+        <h3>My Skills and Experience</h3>
+        <p>Thanks for visiting! I am a senior computer science and engineering major and math minor at the Ohio State University. My interests are video game development and web applications.</p>
       </div>
     </div> 
+      <div id = "about-me" class="about-me section odd">
+      <div class="container " >
+          <div class="col-md-6"><img style = "height:400px" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"></div>
+          <div class="col-md-6">
+            <h2>ABOUT ME</h2>
+            <p>I was born and raised in New Delhi, India, and moved to Columbus to attend the Ohio State University to pursue a bachelors in computer science in 2014. Since coming to college, I have been involved in a variety of roles, from the concession stands of the Ohio Stadium, to teaching high school girls in Texas, and back to the department of Astrophysics at OSU. I am set to graduate in May 2018 and looking for a full time job, preferably a developer role, starting in June 2018!</p>
+          </div>
 
-    <div class="recent-projects">
-	   <div class="container">
-		  <div class="row">
-	  	  <div class="col-md-4">
-			   <h3>Education</h3>
-			     <p>I am a computer science major and math minor at OSU, with a 3.79 GPA.</p>
-			     <p><a href="#">Learn more about university career</a></p>
-		    </div>
-		    <div class="col-md-4">
-			   <h3>Research</h3>
-			   <p>I started as a research assistant the OSU's department of astronomy under Dr. Annika Peter in May 2017. I am currently working towards my senior thesis on the mass of dark matter halos.</p>
-    		 <p><a href="#">Here is what I have worked on so far.</a></p>
-	      </div>
-		    <div class="col-md-4">
-			   <h3>Future Plans</h3>
-			   <p>I am currently looking for full-time positions in the United States starting May 2018.</p>
-			   <p><a href="#">Take a look at my resume!</a></p>
-		    </div>
-	    </div>
-	  </div>
-	</div>
+      </div>
+    </div>
+    <div id = "work" class="work-history section">
+      <div class="container">
+        <h2>WORK EXPERIENCE</h2>
 
+        <h2>OHIO STATE DEPARTMENT OF ASTRONOMY</h2>
+        <h3>Research Assistant, May 2017 - Present</h3>
+        <p>I started working under Dr. Annika Peter as a part of the summer undergraduate research program at the department of astronomy at OSU, which is funded by NASA and the NSF. The project is aimed towards finding a more direct method to estimate the mass of weak dark matter halos. This is done by using various data analysis techniques to closely study these satellite galaxies, and find a way to associate their kinematics, such as relative velocity, to the halo's mass.</p>
+        
+        <h2>OHIO STATE STUDENT-ATHLETE SERVICES</h2>
+        <h3>Academic Tutor, Jan 2017 - Oct 2017</h3>
+        <p>My duties as an academic tutor included, but were not limited to, providing one on one assistance to student-athletes in mathematics, physics, and computer science, helping them with assignments and giving feedback on graded assignments, and communicating with the points of contact regarding our progress throughout the semester.</p>
+
+        <h2>GIRLS WHO CODE</h2>
+        <h3>Instructor, June 2016 - Aug 2016</h3>
+        <p>The Girls Who Code Summer Immersion Program is a 7 week coding camp that focuses on narrowing the gender gap by teaching high school girls more about technology and encouraging them to pursue STEM fields for higher studies. My role as a part of an instructional team of 2 other amazing computer scientists was to engage with the girls and make the lecture material interesting, easy to understand, and accessible. We were also responsible for arranging field trips and guest speakers, and finally helping the girls create a personal project which best highlighted their passions and skill set.</p>
+      </div>
+    </div>
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
   </body>
 </html>

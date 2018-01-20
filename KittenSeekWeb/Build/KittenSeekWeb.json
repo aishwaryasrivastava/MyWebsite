@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "KittenSeek-TheGame",
+"dataUrl": "KittenSeekWeb.data.unityweb",
+"asmCodeUrl": "KittenSeekWeb.asm.code.unityweb",
+"asmMemoryUrl": "KittenSeekWeb.asm.memory.unityweb",
+"asmFrameworkUrl": "KittenSeekWeb.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
