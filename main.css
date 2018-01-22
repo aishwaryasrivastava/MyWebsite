@@ -8,15 +8,16 @@
   padding: 250px 100px;
 
 }
-.about-me .container {
+.about-me, .work-history, .contact .container {
   padding: 100px 0px;
 }
 
-.work-history .container {
-  padding: 100px 0px;
+.footer .container {
+  padding: 30px;
 }
 
-.about-me{
+
+.about-me, .contact {
   background-color: #e8c6ff;
 }
 
@@ -44,4 +45,14 @@
   font-size: 20px;
   color: black;
 }
+
+.icon {
+  transition: transform 0.4s;
+  transform: scale(1);
+}
+
+.icon:hover {
+  transform: scale(1.5);
+}
+
 
